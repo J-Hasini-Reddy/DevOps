@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="avatar.svg" alt="Profile Logo"> <!-- Profile logo image -->
+        <h2>User Registration</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <!-- Inline CSS for input field -->
+            <input type="text" id="name" name="name" required style="border-color: #38d39f;">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label>Gender:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+            
+            <label>Languages Known:</label>
+            <div class="language-group">
+                <label><input type="checkbox" name="language" value="english"> English </label>
+                <label><input type="checkbox" name="language" value="hindi"> Hindi</label>
+                <label><input type="checkbox" name="language" value="telugu"> Telugu</label>
+            </div>
+            
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+                <option value="csm">CSM</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+            </select>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
